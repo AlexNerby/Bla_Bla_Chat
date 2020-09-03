@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gn.lab.GNButton?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apSignUp" prefHeight="704.0" prefWidth="526.0" style="-fx-background-color: #FFBB45; -fx-border-color: #E0621D; -fx-background-radius: 25; -fx-border-radius: 25;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpControllers">
+    <cursor>
+        <Cursor fx:constant="DISAPPEAR" />
+    </cursor>
+    <children>
+        <AnchorPane layoutX="-63.0" layoutY="-15.0" prefHeight="128.0" prefWidth="442.0" style="-fx-background-radius: 100; -fx-background-color: #FF4A21;">
+            <children>
+                <FontAwesomeIconView fill="#ffbb45" glyphName="COMMENTS_ALT" layoutX="63.0" layoutY="104.0" size="125" />
+                <Label layoutX="79.0" layoutY="10.0" text="B" textFill="#ffbb45">
+                    <font>
+                        <Font name="Comic Sans MS Bold Italic" size="45.0" />
+                    </font>
+                </Label>
+                <Label layoutX="98.0" layoutY="23.0" text="B" textFill="#ffbb45">
+                    <font>
+                        <Font name="Comic Sans MS Bold Italic" size="51.0" />
+                    </font>
+                </Label>
+                <Label layoutX="183.0" layoutY="16.0" prefHeight="59.0" prefWidth="158.0" text="Bla-bla" textFill="#ffbb45">
+                    <font>
+                        <Font name="Comic Sans MS Bold Italic" size="45.0" />
+                    </font>
+                </Label>
+                <Label layoutX="213.0" layoutY="50.0" text="Chat" textFill="#ffbb45">
+                    <font>
+                        <Font name="Comic Sans MS Bold Italic" size="57.0" />
+                    </font>
+                </Label>
+            </children></AnchorPane>
+        <JFXTextField fx:id="newName" layoutX="27.0" layoutY="259.0" prefHeight="59.0" prefWidth="215.0" promptText="new Name">
+            <font>
+                <Font size="25.0" />
+            </font></JFXTextField>
+        <JFXPasswordField fx:id="newPassword" layoutX="128.0" layoutY="352.0" prefHeight="59.0" prefWidth="270.0" promptText="new Password">
+            <font>
+                <Font size="25.0" />
+            </font></JFXPasswordField>
+        <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="174.0" layoutY="165.0" prefHeight="59.0" prefWidth="179.0" text="Sign Up" textFill="#d01e1e">
+            <font>
+                <Font name="System Bold" size="41.0" />
+            </font></Label>
+        <JFXButton fx:id="exit" alignment="CENTER" contentDisplay="CENTER" layoutX="398.0" onMouseClicked="#doExit" prefHeight="115.0" prefWidth="118.0" ripplerFill="#ff4a21" style="-fx-background-radius: 50;" text=" ">
+            <graphic>
+                <FontAwesomeIconView fill="#d33816" glyphName="TIMES_CIRCLE" size="75" />
+            </graphic>
+        </JFXButton>
+        <GNButton fx:id="confirm" layoutX="200.0" layoutY="454.0" onMouseClicked="#doConfirm" prefHeight="59.0" prefWidth="127.0" text="Сonfirm" textFill="#ff4a21">
+            <font>
+                <Font name="System Bold" size="27.0" />
+            </font>
+            <transitionColor>
+                <LinearGradient cycleMethod="REFLECT" endX="0.10194174757281549" endY="0.6553398058252426" startX="0.5436893203883495" startY="1.0">
+                    <stops>
+                        <Stop color="#ff4a21" />
+                        <Stop color="#eec565" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </transitionColor>
+        </GNButton>
+        <GNButton fx:id="goToLogin" buttonType="CENTRALIZE" layoutX="187.0" layoutY="552.0" onMouseClicked="#toLogin" prefHeight="59.0" prefWidth="158.0" text="Go to login" textFill="#ff4a21">
+            <font>
+                <Font name="System Bold" size="27.0" />
+            </font>
+            <transitionColor>
+                <LinearGradient cycleMethod="REFLECT" endX="0.10194174757281549" endY="0.6553398058252426" startX="0.5436893203883495" startY="1.0">
+                    <stops>
+                        <Stop color="#ff4a21" />
+                        <Stop color="#eec565" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </transitionColor>
+        </GNButton>
+      <JFXTextField fx:id="newAge" layoutX="267.0" layoutY="259.0" prefHeight="59.0" prefWidth="215.0" promptText="new Age">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="label" contentDisplay="CENTER" layoutX="82.0" layoutY="411.0" prefHeight="38.0" prefWidth="388.0" textAlignment="CENTER" textFill="#9390d3">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Separator layoutX="223.0" layoutY="534.0" prefHeight="0.0" prefWidth="88.0" />
+      <Separator layoutX="394.0" layoutY="28.0" orientation="VERTICAL" prefHeight="59.0" prefWidth="12.0" style="-fx-background-color: #FF4A21;" />
+      <Separator layoutX="204.0" layoutY="244.0" prefHeight="3.0" prefWidth="118.0" />
+    </children>
+</AnchorPane>

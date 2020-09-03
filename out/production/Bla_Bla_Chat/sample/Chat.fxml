@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apChat" prefHeight="704.0" prefWidth="526.0" style="-fx-background-color: #FFBB45; -fx-border-color: #E0621D; -fx-background-radius: 25; -fx-border-radius: 25;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChatControllers">
+    <cursor>
+        <Cursor fx:constant="DISAPPEAR" />
+    </cursor>
+    <children>
+        <AnchorPane layoutX="-63.0" layoutY="-15.0" prefHeight="147.0" prefWidth="460.0" style="-fx-background-radius: 100; -fx-background-color: #FF4A21;">
+            <children>
+                <Label layoutX="79.0" layoutY="10.0" text="B" textFill="#ffbb45">
+                    <font>
+                        <Font name="Comic Sans MS Bold Italic" size="45.0" />
+                    </font>
+                </Label>
+                <Label layoutX="98.0" layoutY="23.0" text="B" textFill="#ffbb45">
+                    <font>
+                        <Font name="Comic Sans MS Bold Italic" size="51.0" />
+                    </font>
+                </Label>
+                <Label fx:id="labelName" layoutX="174.0" layoutY="32.0" prefHeight="64.0" prefWidth="244.0" text="Bla-bla Chat" textFill="#ffbb45">
+                    <font>
+                        <Font name="Comic Sans MS Bold Italic" size="45.0" />
+                    </font>
+                </Label>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="48.0" layoutY="19.0" prefHeight="127.0" prefWidth="133.0" ripplerFill="#ffbb45" style="-fx-background-radius: 50;" text=" " />
+            <Separator layoutX="188.0" layoutY="96.0" opacity="0.55" prefHeight="12.0" prefWidth="222.0" style="-fx-background-color: #D99C3B; -fx-border-color: #D99C3B;" />
+                <FontAwesomeIconView fx:id="toLogin" fill="#ffbb45" glyphName="COMMENTS_ALT" layoutX="65.0" layoutY="101.0" onMouseClicked="#backToLogin" size="100" wrappingWidth="94.0" />
+            </children></AnchorPane>
+        <JFXTextField fx:id="sendText" focusColor="#d21111" labelFloat="true" layoutX="14.0" layoutY="610.0" onKeyPressed="#enterSend" prefHeight="80.0" prefWidth="387.0" promptText="Type a message" style="-fx-background-radius: 50; -fx-background-color: #FC8244;" unFocusColor="#e9d30f">
+            <font>
+                <Font size="26.0" />
+            </font></JFXTextField>
+        <JFXButton fx:id="exit" alignment="CENTER" contentDisplay="CENTER" layoutX="398.0" onMouseClicked="#doExit" prefHeight="115.0" prefWidth="118.0" ripplerFill="#ff4a21" style="-fx-background-radius: 50;" text=" ">
+            <graphic>
+                <FontAwesomeIconView fill="#d33816" glyphName="TIMES_CIRCLE" size="75" />
+            </graphic>
+        </JFXButton>
+      <JFXButton fx:id="sendButton" contentDisplay="CENTER" layoutX="404.0" layoutY="604.0" onMouseClicked="#clickSend" prefHeight="93.0" prefWidth="106.0" ripplerFill="#eb1818" style="-fx-background-radius: 50;" text=" ">
+         <graphic>
+            <FontAwesomeIconView fill="#ff4a21" glyphName="CHEVRON_CIRCLE_RIGHT" size="75" />
+         </graphic></JFXButton>
+      <JFXTextArea fx:id="outText" editable="false" layoutX="22.0" layoutY="182.0" prefHeight="384.0" prefWidth="482.0" style="-fx-background-color: #FF7145; -fx-background-radius: 50;">
+         <font>
+            <Font size="36.0" />
+         </font></JFXTextArea>
+      <Separator layoutX="70.0" layoutY="145.0" opacity="0.55" prefHeight="12.0" prefWidth="387.0" style="-fx-background-color: #FF4A21; -fx-border-color: #D99C3B;" />
+      <Separator layoutX="401.0" layoutY="30.0" orientation="VERTICAL" prefHeight="57.0" prefWidth="9.0" style="-fx-background-color: #FF4A21;" />
+    </children>
+</AnchorPane>
