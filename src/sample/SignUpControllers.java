@@ -50,7 +50,7 @@ public class SignUpControllers extends SignInControllers{
         pane.setStyle("-fx-background-radius: 6;");
         apSignUp.getChildren().setAll(pane);
     }
-
+//
 
     Map<String, String> map = new HashMap<>();
 

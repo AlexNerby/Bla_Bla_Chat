@@ -17,7 +17,7 @@ public class Main extends Application{
         Parent root = FXMLLoader.load(getClass().getResource("SignIn.fxml"));
         Scene signIp = new Scene(root);
         stage.setScene(signIp);
-
+//
         //Убираем верхнюю основу окна
         stage.initStyle(StageStyle.UNDECORATED);
 

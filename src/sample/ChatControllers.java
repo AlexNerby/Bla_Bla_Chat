@@ -62,7 +62,7 @@ public class ChatControllers {
 
     }
 
-
+//
     @FXML
     void initialize() {
     }
