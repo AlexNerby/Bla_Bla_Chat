@@ -2,9 +2,11 @@ package sample;
 
 import com.gn.lab.GNButton;
 import com.jfoenix.controls.JFXButton;
+
 import java.awt.event.ActionEvent;
 import java.io.IOException;
 import java.util.*;
+
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
@@ -59,7 +61,7 @@ public class SignInControllers {
         } else
             return false;
     }
-
+//
 
     @FXML
     void login(MouseEvent event) throws IOException {

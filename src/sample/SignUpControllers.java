@@ -9,10 +9,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+
 import java.io.IOException;
 import java.util.*;
 
-public class SignUpControllers extends SignInControllers{
+public class SignUpControllers extends SignInControllers {
 
     @FXML
     private Label label;
@@ -50,7 +51,7 @@ public class SignUpControllers extends SignInControllers{
         pane.setStyle("-fx-background-radius: 6;");
         apSignUp.getChildren().setAll(pane);
     }
-
+//
 
     Map<String, String> map = new HashMap<>();
 
